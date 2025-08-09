@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance West Bank</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Alliance West<span> Bank</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="/save/save.html">Save</a></li>
+                    <li><a href="./borrow/borrow.html">Borrow</a></li>
+                    <li><a href="/about/about.html">About Us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a  class="open-btn" onclick="openOverlay()" href="#">Log In</a></li>
+
+                    <!-- Overlay -->
+                    <div id="loginOverlay" class="overlay">
+                        <div class="overlay-content">
+                            <button class="close-btn" onclick="closeOverlay()">✖</button>
+                            <h2 style="text-align: center;">Login</h2>
+                            <form style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                <input type="text" placeholder="Account ID" required>
+                                <input type="password" placeholder="Password"  required>
+                                <div style="margin-top: 20px;">
+                                    <button style="border-radius: 40px;" type="submit" class="login-btn">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <li class="go-premium-cta"><a href="./openaccount/openaccount.html">Create Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Beyond Banking &amp; Business</p>
+                <h1>A Bank That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>User Registration & Secure Login</li>
+                <li>Account Overview</li>
+                <li>Transaction Notification</li>
+                <li>Loan & Credit Services</li>
+                <li>Personal Finaance Assistant</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/images/closeup-portrait-mature-experienced-african-260nw-2391638271.webp" alt="Person">
+
+                    <blockquote>"I am impressed with the customer service and speed of payment"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="/images/istockphoto-1437047112-612x612.jpg" alt="Person">
+
+                    <blockquote>"All one has to do is to look at your investment to see how well it is being looked"</blockquote>
+                    <cite>-Ted Moralee</cite>
+                </li>
+                <li>
+                    <img src="/images/pexels-olly-733872.jpg" alt="Person">
+
+                    <blockquote>"I like how fast the app loads and how simple it is to check my balance or send money. Everything I need is right there. Great job!"</blockquote>
+                    <cite>- Villa Louis</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="container-footer">
+                    <h2>Building Strength Together</h2>
+                    <p>Golden is a not-for-profit credit union bank built on the unshakeable
+                        promise to serve those who work every day to build a better future for
+                        us all. For over 80 years, we’ve delivered a breadth of financial services,
+                        expert guidance, and innovative tools to help strengthen and grow businesses,
+                        families, and our local communities. We are your Golden, and we are Building Strength Together.</p>
+                </div>
+                <div class="line"></div>
+                <div class="main-footer-links">
+                    <ul>
+                        <li class="links-bold"> <a href="#" >ABOUT ALLIANCE</a></li>
+                        <li> <a href="#">Who we are</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li> <a href="#">NEW & EVENTS</a></li>
+                        <li> <a href="#">Latest News</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="links-bold"> <a href="#" >QUICK LINKS</a></li>
+                        <li> <a href="#">Developer</a></li>
+                        <li><a href="#">Information Security</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-last">
+                <div class="footer-site-links">
+                    <a href="" target="_self">Privacy Policy |</a>
+                    <a href="" target="_self">FAQs |</a>
+                    <a href="" target="_self">Sitemap</a>
+                </div>
+            
+
+                <div class="footer-logo">
+                    <img src="/images/ncua-cert.png" alt="ncua-cert">
+                    <img src="/images/ncua-lender.png" alt="nuca-lender">
+                    <img src="/images/blue-seal-200-42-bbb-80015515.png" alt="">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alliance West Bank – All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+        function openOverlay() {
+            document.getElementById("loginOverlay").style.display = "flex";
+        }
+        function closeOverlay() {
+            document.getElementById("loginOverlay").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>

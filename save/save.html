@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance West Bank</title>
+    <link rel="stylesheet" href="save.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Alliance West<span> Bank</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="../index.html">Home</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="/borrow/borrow.html">Borrow</a></li>
+                    <li><a href="/about/about.html">About Us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Log In</a></li>
+                    <li class="go-premium-cta"><a href="/openaccount/openaccount.html">Create Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+  <section class="savings-section">
+    <div class="intro">
+      <h1>The Smart Place to Save</h1>
+      <p>
+        Whether you are saving toward short- or long-term goals or creating a retirement nest egg,
+        we can help you find the savings plan that works best for you. Enjoy competitive savings account
+        rates on products for the entire family.
+      </p>
+      <p>
+        At Golden, we have an array of products to meet your savings goals — from High Yield Savings accounts
+        to Kids Savings Accounts and Holiday Club, Money Market Savings Accounts and more!
+      </p>
+      <a class="cta" href="/openaccount/openaccount.html">Open a Savings Account</a>
+      <a class="cta outline" href="#">Schedule an Appointment</a>
+    </div>
+
+    <div class="highlight">
+      <strong>Golden</strong> is recognized as a <em>Forbes 2021 Best-in-State Credit Union</em> and in the top 1%
+      for returning value nationwide in the 2021 Callahan & Associates Return to Member scoring.
+    </div>
+
+    <div class="account-types">
+      <div class="card">
+        <h3>High Yield Savings</h3>
+        <p>Earn high returns with flexible access to your money. Ideal for serious savers.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="card">
+        <h3>Star Savings</h3>
+        <p>Perfect for short- or long-term goals. Great rates, mobile access & more.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="card">
+        <h3>Certificates (CDs)</h3>
+        <p>Lock in high rates with flexible terms. Secure savings over time.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="card">
+        <h3>Holiday Club</h3>
+        <p>Save up for the holidays all year round with automatic annual transfers.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="card">
+        <h3>Kids Club Savings</h3>
+        <p>Teach kids to save smart! Includes $10 birthday gift & fun features.</p>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="card">
+        <h3>Money Market Account</h3>
+        <p>Earn more as your balance grows — with flexible withdrawal access.</p>
+        <a href="#">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="container-footer">
+                    <h2>Building Strength Together</h2>
+                    <p>Golden is a not-for-profit credit union bank built on the unshakeable
+                        promise to serve those who work every day to build a better future for
+                        us all. For over 80 years, we’ve delivered a breadth of financial services,
+                        expert guidance, and innovative tools to help strengthen and grow businesses,
+                        families, and our local communities. We are your Golden, and we are Building Strength Together.</p>
+                </div>
+                <div class="line"></div>
+                <div class="main-footer-links">
+                    <ul>
+                        <li class="links-bold"> <a href="#" >ABOUT GOLDEN</a></li>
+                        <li> <a href="#">Who we are</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li> <a href="#">NEW & EVENTS</a></li>
+                        <li> <a href="#">Latest News</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="links-bold"> <a href="#" >QUICK LINKS</a></li>
+                        <li> <a href="#">Developer</a></li>
+                        <li><a href="#">Information Security</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-last">
+                <div class="footer-site-links">
+                    <a href="" target="_self">Privacy Policy |</a>
+                    <a href="" target="_self">FAQs |</a>
+                    <a href="" target="_self">Sitemap</a>
+                </div>
+            
+
+                <div class="footer-logo">
+                    <img src="/images/ncua-cert.png" alt="ncua-cert">
+                    <img src="/images/ncua-lender.png" alt="nuca-lender">
+                    <img src="/images/blue-seal-200-42-bbb-80015515.png" alt="">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alliance West Bank – All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>
